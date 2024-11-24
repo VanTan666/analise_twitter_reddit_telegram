@@ -1,0 +1,29 @@
+{
+  "name": "sentiment-analysis-dashboard",
+  "version": "1.0.0",
+  "description": "Real-time social media sentiment analysis dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "sentiment": "^5.0.2",
+    "snoowrap": "^1.23.0",
+    "socket.io": "^4.7.2",
+    "twitter-api-v2": "^1.15.1",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
